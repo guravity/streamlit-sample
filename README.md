@@ -1,0 +1,1 @@
+streamlitとtransformersで作成した簡易的なアプリケーション

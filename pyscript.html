@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+
+<body>
+    <div id="output" />
+    <py-script>
+        output = Element('output')
+        
+        output.write('Hello world!')
+        
+        <!-- from datetime import datetime as dt
+        import asyncio
+        # 定数
+        _FPS = 1.0 / 30
+        # 呼び出す関数はasyncにする必要がある
+        async def main():
+          while True:
+            output.write(f'{dt.now()}')
+            await asyncio.sleep(_FPS)
+        pyscript_loader.close()
+        pyscript.run_until_complete(main()) -->
+
+
+        <!-- from pyodide import create_proxy
+        async def on_keydown(event):
+            """キーが押されたとき."""
+            output.write(event.key)
+        panel = document.querySelector("body")
+        panel.addEventListener("keydown", create_proxy(on_keydown)) -->
+
+    </py-script>
+</body>
+
+</html>
